@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #1f2937;
-    min-height: 100svh;
+    min-height: calc(100vh - 3rem);
 }
 
 h1 {
@@ -190,11 +190,12 @@ hr {
         padding-left: 1rem;
         padding-right: 1rem;
         justify-content: flex-start;
-        height: 89svh;
+        min-height: 95svh;
     }
 
     h1 {
         margin-top: 0rem;
+        font-size: 2.5rem;
     }
 
     p {
@@ -268,22 +269,23 @@ hr {
         margin-bottom: 2rem;
         width: 100%;
     }
-
-    footer {
-        height: 11svh;
-    }
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+    text-align: center;
     background: #1f2937;
-    gap: 10px;
-    width: auto;
 }
 
-footer > p {
+.flex {
+    display: flex;
+    place-items: center;
+    gap: 10px;
+}
+
+footer > div > p {
     font-size: 1rem;
     opacity: 50%;
 }
