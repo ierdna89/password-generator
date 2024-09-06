@@ -2,47 +2,46 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100svh;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #1F2937;
-    height: 94svh;
-  }
-  
-  h1 {
+    background: #1f2937;
+    min-height: 100svh;
+}
+
+h1 {
     color: white;
     font-size: 3.5rem;
     font-weight: bold;
     font-family: sans-serif;
     margin-bottom: 0%;
     text-align: center;
-  }
-  
-  h1 .h1color {
-    color: #4ADF86;
-  }
-  
-  p {
-    color: #D5D4D8;
+}
+
+h1 .h1color {
+    color: #4adf86;
+}
+
+p {
+    color: #d5d4d8;
     font-family: sans-serif;
     font-size: 1.5rem;
     text-align: center;
-  }
-  
-  .passwordOptionsContainer {
+}
+
+.passwordOptionsContainer {
     display: flex;
     align-items: center;
-  }
-  
-  button {
+}
+
+button {
     font-family: sans-serif;
     font-size: 1.2rem;
-    background-color: #4ADF86;
+    background-color: #4adf86;
     color: white;
     padding: 15px;
     width: 14rem;
@@ -52,77 +51,77 @@ body {
     border-radius: 7px;
     border: none;
     cursor: pointer;
-  }
-  
-  button:active {
+}
+
+button:active {
     transform: translateY(4px);
-  }
-  
-  .genPassContainer {
+}
+
+.genPassContainer {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 30rem;
-  }
-  
-  .bigSliderSection {
+}
+
+.bigSliderSection {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     height: 100%;
-  }
-  
-  .slideContainer {
+}
+
+.slideContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .passwordLengthText {
+}
+
+.passwordLengthText {
     color: white;
     font-family: sans-serif;
     font-size: 1rem;
-  }
-  
-  .passTextContainer {
+}
+
+.passTextContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
-  
-  .slider {
+}
+
+.slider {
     -webkit-appearance: none;
     width: 100%;
     height: 20px;
     background: #273549;
     outline: none;
     opacity: 1;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
     border-radius: 7px;
-  }
-  
-  .slider::-webkit-slider-thumb {
+}
+
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 15px;
     height: 15px;
-    background: #4ADF86;
+    background: #4adf86;
     cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
+}
+
+.slider::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background: #4ADF86;
+    background: #4adf86;
     cursor: pointer;
-  }
-  
-  .passwordLength {
+}
+
+.passwordLength {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,174 +129,171 @@ body {
     font-size: 1rem;
     color: white;
     font-family: sans-serif;
-  }
-  
-  .checkboxes {
+}
+
+.checkboxes {
     display: flex;
     flex-direction: column;
     color: white;
     font-family: sans-serif;
     font-size: 0.95rem;
     margin-left: 0.85rem;
-  }
-  
-  .checkboxContainer {
+}
+
+.checkboxContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  hr {
+}
+
+hr {
     display: block;
     height: 1px;
     max-width: 30rem;
     width: 100%;
     border: 0;
-    border-top: 1px solid #2F3E53;
+    border-top: 1px solid #2f3e53;
     margin: 1em 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 0;
-  }
-  
-  .passContainers {
+}
+
+.passContainers {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 30rem;
     width: 100%;
-  }
-  
-  .generatedPasswords {
+}
+
+.generatedPasswords {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    color: #4ADF86;
+    color: #4adf86;
     background-color: #273549;
     height: 50px;
     width: 100%;
     border-radius: 7px;
     font-size: 1rem;
-  }
-  
-  #generatedPasswordOne {
+}
+
+#generatedPasswordOne {
     margin-bottom: 2rem;
-  }
-  
-  @media only screen and (max-width: 500px) {
-  
+}
+
+@media only screen and (max-width: 500px) {
     .container {
-      padding-top: 3rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      justify-content: flex-start;
-      height: 89svh;
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        justify-content: flex-start;
+        height: 89svh;
     }
-  
+
     h1 {
-      margin-top: 0rem;
+        margin-top: 0rem;
     }
-  
+
     p {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
-  
+
     .genPassContainer {
-      flex-direction: column;
-      width: 100%;
-      min-width: 200px;
-      margin-top: 1rem;
+        flex-direction: column;
+        width: 100%;
+        min-width: 200px;
+        margin-top: 1rem;
     }
-  
+
     button {
-      width: 100%;
-      min-width: 3rem;
-      margin-bottom: 1rem;
+        width: 100%;
+        min-width: 3rem;
+        margin-bottom: 1rem;
     }
-  
+
     .passTextContainer {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0.5rem;
     }
-  
+
     .passwordOptionsContainer {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
     }
-  
+
     .checkboxContainer {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
-  
+
     .checkboxes {
-      flex-direction: row;
-      margin-left: 0rem;
-      margin-top: 1rem;
+        flex-direction: row;
+        margin-left: 0rem;
+        margin-top: 1rem;
     }
-  
+
     #symbolCheckboxContainer {
-      margin-left: 1rem;
+        margin-left: 1rem;
     }
-  
+
     .passContainers {
-      flex-direction: column;
-      width: 100%;
-      min-width: 200px;
+        flex-direction: column;
+        width: 100%;
+        min-width: 200px;
     }
-  
+
     hr {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
-  
+
     .bigSliderSection {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .slideContainer {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .generatedPasswords {
-      margin-bottom: 2rem;
-      width: 100%;
+        margin-bottom: 2rem;
+        width: 100%;
     }
 
     footer {
-        height: 15svh;
-      }
-  }
+        height: 11svh;
+    }
+}
 
-
-  footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1F2937;
+    background: #1f2937;
     gap: 10px;
     width: auto;
-    height: 6svh;
-  }
-  
-  footer > p {
+}
+
+footer > p {
     font-size: 1rem;
     opacity: 50%;
-  }
+}
 
-  .fa-github {
+.fa-github {
     color: #2e3d52;
     font-size: 25px;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .fa-github:hover {
+}
+
+.fa-github:hover {
     transform: rotate(360deg) scale(1.3);
-  }
+}
